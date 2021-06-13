@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./1.css">
+</head>
+
+<body>
+    <!-- 导航 -->
+    <div class="dh">
+        <img src="./images/3.jpg" class="img1">
+        <div class="lj1">
+            &nbsp;&nbsp;<a href="#">首页</a>&nbsp;&nbsp;
+            &nbsp;&nbsp;<a href="#">榜单</a>&nbsp;&nbsp;
+            &nbsp;&nbsp;<a href="#">歌手</a>&nbsp;&nbsp;
+            &nbsp;&nbsp;<a href="#">下载酷我客户端</a>&nbsp;&nbsp;
+        </div>
+        <div class="lj2">
+            <img src="./images/2-1.png">
+            <a href="#">美女秀</a>
+            <img src="./images/2-1.png">
+            <a href="#">酷我耳机</a>
+            <img src="./images/2-1.png">
+            <a href="#">VIP会员</a>
+            <img src="./images/2-1.png">
+            <a href="#">i听</a>
+        </div>
+        <div class="lj3">
+            <a href="#">更多服务</a>&nbsp;&nbsp;
+            &nbsp;&nbsp;<a href="#">登录</a>
+        </div>
+        <p class="p">^</p>
+        <p id="pnext">找到好音乐</p>
+        <img src="./images/4.png" class="img2">
+    </div>
+    <div class="container">
+        <!-- 歌词和播放器 -->
+        <div class="song">
+            <p style="margin-bottom: 5px;margin-top:45px;font-family: '宋体';font-size: 30px;color: black;">喜羊羊</p>
+            <div class="js">
+                <p style="color: rgb(179, 179, 179);">专辑：</p>
+                <p style="color: orange;">儿歌大全</p>
+                <p style="color:rgb(179, 179, 179);">歌手：</p>
+                <p style="color: orange;">华语群星
+                <p>
+                <p style="color: black;">分享</p>
+                <div class="pl"></div>
+                <p style="color: orange;">评论</p>
+            </div>
+            <p style="font-size: 12px; color: black; margin-top:5px;">上传时间：2015-10-02 歌曲来源：网络</p>
+            <hr color="gainsboro">
+            <div class="zw">
+                <p>白云因为我变得柔软</p>
+                <p>别看我只是一只羊</p>
+                <p>羊儿的聪明难以想象</p>
+                <p>天再高心情一样奔放</p>
+                <p>每天都追赶太阳</p>
+                <p style="color: orange;font-size: 20px;">有什么难题 &nbsp;去牵绊我&nbsp;都不会去心伤</p>
+                <p>有什么危险在我面前&nbsp;也不会去慌乱</p>
+                <p>就算有狼群&nbsp;把我追捕&nbsp;也当做游戏一场</p>
+                <p>在什么时间&nbsp;都爱开心&nbsp;笑容都会飞翔</p>
+                <p>就算会摔倒&nbsp;站了起来&nbsp;永远不会沮丧</p>
+                <p>在所有天气&nbsp;拥有叫人&nbsp;大笑的力量</p>
+                <p>虽然我是只羊</p>
+            </div>
+        </div>
+        <div class="radio">
+            <audio autoplay="autoplay" id="mymusic">
+                <source src="./2.mp3" type="audio/mp3">
+            </audio>
+            <div class="picture">
+                <div class="tu"><img src="./images/1.jpg" class="img3"></div>
+                <div class="c1"></div>
+                <div class="c2"></div>
+            </div>
+            <div class="musicControl">
+                <div class="play" id="wp_playBtn"></div>
+                <div id="prograssBar">
+                    <div id="wp_bufBar">
+                        <div class="prograssBar" id="wp_processBar"></div>
+                        <a href="##" class="schedule_btn" id="wp_processBtn" style="left: 0;"></a>
+                        <p id="wp_playTime" class="opacity">00.00</p>
+                        <div class="jy" id="mutebtn"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn">
+                <div class="tb"></div>
+                <div class="xz">免费下载这首歌</div>
+            </div>
+            <div class="tx">
+                <div class="hi"><img src="./images/8.jpg" height="50px" width="50px"></div>
+                <div class="qp"></div>
+                <p id="xyy">喜羊羊——h5班</p>
+                <div id="yl"><img src="./images/12.gif" height="12px" width="12px"></div>
+                <p id="htl">喜羊羊与灰太狼</p>
+                <p id="qxc">去现场></p>
+            </div>
+        </div>
+        <!-- 评价 -->
+        <div class="remark">
+            <div class="first">
+                <p>评论</p>
+                <p>1730条评论</p>
+            </div>
+            <hr style="color: rgb(210, 238, 245);">
+            <div class="pltx">
+                <img src="./images/8.jpg" height="50px" width="50px" style="margin:0 auto;">
+            </div>
+            <!-- 评论区 -->
+            <div class="plq">
+                <textarea name="plq" id="plq" cols="30" rows="10" placeholder="分享你的音乐见解"></textarea>
+                <img src="./images/9.png" height="20px" width="20px">
+                <div>
+                    <p id="sr">已输入0个字</p>
+                </div>
+                <button type="submit" id="tj">评论</button>
+            </div>
+            <!-- 精彩评论 -->
+            <div id="plwz">精彩评论</div>
+            <hr style="color: rgb(210, 238, 245);width:900px;margin-left:0px;margin-top: 70px;">
+            <div class="jcpl" id="jcpl1"></div>
+            <!-- 分页 -->
+            <div class="zfy">
+                <div class="fy1">
+                    <p>
+                        < </p>
+                </div>
+                <div class="fy2">
+                    <p>1</p>
+                </div>
+                <div class="fy3">
+                    <p>2</p>
+                </div>
+                <div class="fy4">
+                    <p>3</p>
+                </div>
+                <div class="fy5">
+                    <p>…</p>
+                </div>
+                <div class="fy6">
+                    <p>17</p>
+                </div>
+                <div class="fy7">
+                    <p>></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    var sum = 0;
+    var Time;
+    var writer;
+    var pnext = document.getElementById("pnext");
+    var flag = true;
+    var voice = false;
+    var mymusic = document.getElementById("mymusic");
+    var start = document.getElementById("wp_playBtn");
+    var wp_playTime = document.getElementById("wp_playTime");
+    var mutebtn = document.getElementById("mutebtn");
+    var plq = document.getElementById("plq");
+    var sr = document.getElementById("sr");
+    var tj = document.getElementById("tj");
+    var jcpl1 = document.getElementById("jcpl1");
+    var pl1 = document.getElementById("pl1");
+    //导航栏里的搜索
+    pnext.onclick = function () {
+        pnext.innerHTML = window.prompt("");
+    }
+    // 播放暂停
+    start.onclick = function () {
+        if (flag == true) {
+            mymusic.play();
+            start.style.backgroundPosition = "69px 41px";
+            flag = false;
+        } else {
+            mymusic.pause();
+            start.style.backgroundPosition = "114px 0px";
+            flag = true;
+        }
+    }
+    // 进度条
+    function Format(time) {
+        var minute = parseInt(time / 60);
+        var second = parseInt(time % 60);
+        minute = minute >= 10 ? minute : "0" + minute;
+        second = second >= 10 ? second : "0" + second;
+        return minute + ":" + second;
+    };
+    var interval = setInterval(function () {
+        var Proportion = Math.round(mymusic.currentTime) / Math.round(mymusic.duration);
+        wp_processBar.style.width = Proportion * 200 + "px";
+        wp_processBtn.style.left = Proportion * 200 + "px";
+        var currentTime1 = mymusic.currentTime;
+        var now = Format(currentTime1)
+        wp_playTime.innerHTML = now;
+        if (wp_processBar.style.width == '10px') {
+            start.style.backgroundPosition = "114px 0px";
+        }
+    }, 1000)
+    //静音
+    mutebtn.onclick = function () {
+        if (voice == false) {
+            mymusic.muted = true;
+            voice = true;
+        } else {
+            mymusic.muted = false;
+            voice = false;
+        }
+    }
+    //输入多少个字
+    plq.onkeyup = function () {
+        var textlength = plq.value.length;
+        sr.innerHTML = "已输入" + textlength + "个字";
+    }
+    ///获取时间
+    var date = new Date();
+    function getTime() {
+        var year = date.getFullYear();
+        var month = date.getMonth() + 1;
+        if (month < 10) {
+            month = "0" + month;
+        }
+        var day = date.getDate();
+        if (day < 10) {
+            day = "0" + day;
+        }
+        var hour = date.getHours();
+        if (hour < 10) {
+            hour = "0" + hour;
+        }
+        var minute = date.getMinutes();
+        if (minute < 10) {
+            minute = "0" + minute;
+        }
+        var second = date.getSeconds();
+        if (second < 10) {
+            second = "0" + second;
+        }
+        return year + '-' + month + '-' + day + "&nbsp" + hour + ':' + minute + ':' + second;
+    }
+    //提交按钮
+    function local() {
+        var location = localStorage['location'];
+        if (location == '' || location == undefined || location == null) {
+            localStorage['location'] = '[]';
+        }
+        var Obj = {
+            Time: getTime(date),
+            writer: plq.value
+        }
+        location = JSON.parse(localStorage['location']);
+        location.push(Obj);
+        // location = location.reverse();
+        localStorage['location'] = JSON.stringify(location);
+        console.log(location);
+        return sum = location.length;
+    }
+    function add() {
+        jcpl1.innerHTML = '';
+        var location = localStorage['location'];
+        if (location == '' || location == undefined || location == null) {
+            localStorage['location'] = '[]';
+        }
+        var Obj = {
+            Time: getTime(date),
+            writer: plq.value
+        }
+        location = JSON.parse(localStorage['location']);
+        location.push(Obj);
+        for (var i = sum - 1; i > 0; i--) {
+            var pl1 = document.createElement('div');
+            jcpl1.appendChild(pl1);
+            pl1.style.width = '830px';
+            pl1.style.height = '100px';
+            var div1 = document.createElement('div');
+            pl1.appendChild(div1);
+            div1.style.width = '50px';
+            div1.style.height = '50px';
+            div1.style.margin = '10px 30px';
+            var img1 = document.createElement('img');
+            div1.appendChild(img1);
+            img1.style.height = '50px';
+            img1.style.width = '50px';
+            img1.src = './images/8.jpg';
+            var div2 = document.createElement('div');
+            pl1.appendChild(div2);
+            div2.style.width = '600px';
+            div2.style.height = '80px';
+            div2.style.position = 'absolute';
+            div2.style.margin = '-60px 100px';
+            var nr111 = document.createElement('p');
+            div2.appendChild(nr111);
+            nr111.style.color = 'orange';
+            nr111.style.position = 'absolute';
+            nr111.style.fontSize = '15px';
+            nr111.style.marginTop = '5px';
+            nr111.style.marginLeft = '10px';
+            nr111.style.fontFamily = '宋体';
+            nr111.style.float = 'left';
+            nr111.innerHTML = '喜羊羊';
+            var nr121 = document.createElement('p');
+            div2.appendChild(nr121);
+            nr121.style.color = 'grey';
+            nr121.style.position = 'absolute';
+            nr121.style.fontSize = '10px';
+            nr121.style.marginTop = '10px';
+            nr121.style.marginLeft = '550px';
+            nr121.style.fontFamily = '宋体';
+            nr121.style.float = 'right';
+            nr121.innerHTML = '分享';
+            var nr222 = document.createElement('p');
+            nr222.style.color = 'black';
+            nr222.style.height = '20px';
+            nr222.style.width = '500px';
+            nr222.style.position = 'absolute';
+            nr222.style.fontSize = '10px';
+            nr222.style.marginTop = '30px';
+            nr222.style.marginLeft = '10px';
+            nr222.style.fontFamily = '宋体';
+            div2.appendChild(nr222);
+            nr222.innerHTML = location[i].writer;
+            var nr333 = document.createElement('p');
+            nr333.style.color = 'grey';
+            nr333.style.height = '20px';
+            nr333.style.width = '200px';
+            nr333.style.position = 'absolute';
+            nr333.style.fontSize = '10px';
+            nr333.style.marginTop = '50px';
+            nr333.style.marginLeft = '10px';
+            nr333.style.fontFamily = '宋体';
+            div2.appendChild(nr333);
+            nr333.innerHTML = location[i].Time;
+            var nr444 = document.createElement('p');
+            nr444.style.color = 'grey';
+            nr444.style.height = '20px';
+            nr444.style.width = '60px';
+            nr444.style.position = 'absolute';
+            nr444.style.fontSize = '10px';
+            nr444.style.marginTop = '50px';
+            nr444.style.marginLeft = '500px';
+            nr444.style.fontFamily = '宋体';
+            div2.appendChild(nr444);
+            nr444.innerHTML = '删除 163';
+            var img2 = document.createElement('img');
+            div2.appendChild(img2);
+            img2.style.height = '20px';
+            img2.style.width = '18px';
+            img2.style.position = 'absolute';
+            img2.style.marginTop = '44px';
+            img2.style.marginLeft = '550px';
+            img2.src = './images/11.png';
+            var nr555 = document.createElement('p');
+            nr555.style.color = 'grey';
+            nr555.style.height = '20px';
+            nr555.style.width = '30px';
+            nr555.style.position = 'absolute';
+            nr555.style.fontSize = '10px';
+            nr555.style.marginTop = '50px';
+            nr555.style.marginLeft = '570px';
+            nr555.style.fontFamily = '宋体';
+            div2.appendChild(nr555);
+            nr555.innerHTML = '回复';
+            var fg = document.createElement('hr');
+            pl1.appendChild(fg);
+            fg.style.color = 'rgb(250, 250, 249)';
+            fg.style.marginTop = '15px';
+        }
+    }
+    tj.onclick = function () {
+        date = new Date();
+        getTime(date);
+        local();
+        add();
+        sr.innerHTML = "已输入0个字";
+        plq.value = "";
+    }
+    window.onload = function () {
+        local();
+        add();
+    }
+</script>
+
+</html>
